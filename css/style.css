@@ -1,0 +1,38 @@
+.logo
+{
+    height: 80px;
+    width: auto;
+}
+
+#form
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.botao
+{
+    background-color: rgb(238, 110, 115);
+}
+
+.botao:hover
+{
+    background-color: rgba(238, 110, 115, .8);
+}
+
+.material-icons
+{
+    position: absolute;
+    right: 10px;
+}
+
+.card .card-image img
+{
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.container
+{
+    padding-top: 30px;
+}
