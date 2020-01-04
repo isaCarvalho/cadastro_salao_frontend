@@ -12,7 +12,7 @@ function loadContent(id)
 
 function load()
 {
-    fetch("http://localhost:8080/api/vendas")
+    fetch("http://localhost:8080/vendas")
     .then(response => response.json())
     .then(response => {
 
@@ -44,7 +44,7 @@ form.addEventListener("submit", function(event)
     let body = new FormData(event.target);
     console.log(body);
 
-    fetch("http://localhost:8080/api/venda/", {method: 'post', body})
+    fetch("http://localhost:8080/venda/", {method: 'post', body})
     .then(response => response.json())
     .then(response => {
         console.log(response);
@@ -54,7 +54,7 @@ form.addEventListener("submit", function(event)
 
 function excluir(id)
 {
-    fetch(`http://localhost:8080/api/venda/${id}`, {method: 'delete'})
+    fetch(`http://localhost:8080/venda/${id}`, {method: 'delete'})
     .then(response => response.json())
     .then(response => console.log(response))
 }

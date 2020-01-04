@@ -1,2 +1,2 @@
 <?php
-include "view/inicial.html";
+include "view/login.html";

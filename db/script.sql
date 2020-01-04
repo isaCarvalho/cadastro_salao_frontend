@@ -35,3 +35,13 @@ create table vendas(
 
 create sequence vendas_seq increment 1 minvalue 1 start 1;
 alter table vendas alter column id set default nextval('vendas_seq');
+
+create table funcionarios (
+	id serial primary key,
+	name varchar(255) not null,
+	email varchar(255) not null,
+	password varchar(32) not null
+);
+
+create sequence funcionarios_seq increment 1 start 1 minvalue 1;
+alter table funcionarios alter column id set default nextval('funcionarios_seq');

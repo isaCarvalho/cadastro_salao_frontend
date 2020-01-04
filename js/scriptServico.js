@@ -12,7 +12,7 @@ function loadContent(id)
 
 function load()
 {
-    fetch("http://localhost:8080/api/servicos")
+    fetch("http://localhost:8080/servicos")
     .then(response => response.json())
     .then(response => {
 
@@ -46,7 +46,7 @@ form.addEventListener("submit", function(event)
     let body = new FormData(event.target);
     console.log(body);
 
-    fetch("http://localhost:8080/api/servico/", {method: 'post', body})
+    fetch("http://localhost:8080/servico/", {method: 'post', body})
     .then(response => response.json())
     .then(response => {
         console.log(response);
@@ -56,7 +56,7 @@ form.addEventListener("submit", function(event)
 
 function excluir(id)
 {
-    fetch(`http://localhost:8080/api/servico/${id}`, {method: 'delete'})
+    fetch(`http://localhost:8080/servico/${id}`, {method: 'delete'})
     .then(response => response.json())
     .then(response => console.log(response))
 }
@@ -65,7 +65,7 @@ function pesquisar()
 {
     let nome = document.getElementById('nome').value;
 
-    fetch("http://localhost:8080/api/servicos")
+    fetch("http://localhost:8080/servicos")
     .then(response => response.json())
     .then(response => {
         response.forEach(servico => {

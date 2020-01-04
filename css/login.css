@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+
+body
+{
+    background-image: url(../images/login_fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login
+{
+    width: 30%;
+    height: 420px;
+    background-color: rgba(255,255,255,.95);
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+h2
+{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+form
+{
+    padding: 15px;
+}
+
+.right
+{
+    width: 100%;
+}
